@@ -28,7 +28,12 @@ for uploaded_file in uploaded_files:
 st.divider()
 st.write(" ")
 with st.container():
-    st.markdown("{name}\n{position}\n{straße}\n{postleitzahl}\n{email}\n{handynummer}\n".format(name= name, position= position, straße= straße, postleitzahl= postleitzahl, email= email, handynummer= handynummer))
+    st.markdown("{name}\n
+    {position}\n
+    {straße}\n
+    {postleitzahl}\n
+    {email}\n
+    {handynummer}\n".format(name= name, position= position, straße= straße, postleitzahl= postleitzahl, email= email, handynummer= handynummer))
 st.write(" ")
 st.divider()
 st.subheader("Downloade deine Visitenkarte:")
