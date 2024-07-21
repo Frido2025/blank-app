@@ -32,5 +32,5 @@ with st.container():
 st.write(" ")
 st.divider()
 st.subheader("Downloade deine Visitenkarte:")
-st.button("Download"):
-    st.write("Das downloaden von Visitenkarten ist derzeit nicht verfügbar...")
+st.button("Download")
+#st.write("Das downloaden von Visitenkarten ist derzeit nicht verfügbar...")
