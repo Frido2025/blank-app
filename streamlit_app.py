@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit-extras
 
 st.title("Digitale Visitenkarte")
 st.write(" ")
@@ -32,32 +31,14 @@ with st.container():
 st.write(" ")
 st.divider()
 st.subheader("Downloade deine Visitenkarte:")
-st.button("Download")
-#st.write("Das downloaden von Visitenkarten ist derzeit nicht verfügbar...")
+st.write(" ")
+if st.button("Download"):
+    st.write("Das downloaden von Visitenkarten ist derzeit nicht verfügbar...")
+st.write(" ")
+st.divider()
+st.write(" ")
+geheimnis = st.checkbox(" ")
 
-def example():
-    with stylable_container(
-        key="green_button",
-        css_styles="""
-            button {
-                background-color: green;
-                color: white;
-                border-radius: 20px;
-            }
-            """,
-    ):
-        st.button("Green button")
+if geheimnis:
+    st.balloons()
 
-    st.button("Normal button")
-
-    with stylable_container(
-        key="container_with_border",
-        css_styles="""
-            {
-                border: 1px solid rgba(49, 51, 63, 0.2);
-                border-radius: 0.5rem;
-                padding: calc(1em - 1px)
-            }
-            """,
-    ):
-        st.markdown("This is a container with a border.")
