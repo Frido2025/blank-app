@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_extras import stylable_container
+
 
 st.title("Digitale Visitenkarte")
 st.write(" ")
@@ -28,9 +28,9 @@ for uploaded_file in uploaded_files:
 st.divider()
 st.write(" ")
 with st.container():
-    st.write(name)
-    st.write(position)
-    st.write(straße)
-    st.write(postleitzahl)
-    st.write(email)
-    st.write(handynummer)
+    st.markdown(name)
+    st.markdown(position)
+    st.markdown(straße)
+    st.markdown(postleitzahl)
+    st.markdown(email)
+    st.markdown(handynummer)
